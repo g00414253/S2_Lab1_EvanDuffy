@@ -58,9 +58,61 @@ public class ProductDB {
             mySoftware.setVersion("Oracle 3.0");
             myProduct=mySoftware;
         }
-        //Music DB
 
-        //Tv DB
+        //TV DB
+        if (productCode.equalsIgnoreCase("Samsung")) {
+           Tv myTV= new Tv();
+            myTV.setCode(productCode);
+           myTV.setDescription("Samsung Tv ");
+            myTV.setPrice(249.99);
+            myTV.setManufacture("Samsung");
+            myTV.setSize("55");
+            myProduct=myTV;
+        } else  if (productCode.equalsIgnoreCase("Sony")) {
+            Tv myTV= new Tv();
+            myTV.setCode(productCode);
+            myTV.setDescription("Sony Tv ");
+            myTV.setPrice(349.99);
+            myTV.setManufacture("Sony");
+            myTV.setSize("100");
+            myProduct=myTV;
+        } else  if (productCode.equalsIgnoreCase("LG")){
+            Tv myTV= new Tv();
+            myTV.setCode(productCode);
+            myTV.setDescription("LG Tv ");
+            myTV.setPrice(249.99);
+            myTV.setManufacture("LG");
+            myTV.setSize("60");
+            myProduct=myTV;
+        }
+
+        //Music DB
+        if (productCode.equalsIgnoreCase("Brazil")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Music");
+            myMusic.setPrice(5.00);
+            myMusic.setArtist("Declan McKenna");
+            myMusic.setLabel("Columbia records");
+            myProduct=myMusic;
+        } else if (productCode.equalsIgnoreCase("Can't Stop ")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Music");
+            myMusic.setPrice(10.00);
+            myMusic.setArtist("Red Hot Chilli Peppers");
+            myMusic.setLabel("Warner Records");
+            myProduct=myMusic;
+        } else if (productCode.equalsIgnoreCase("Sweet Emotion")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Music");
+            myMusic.setPrice(7.50);
+            myMusic.setArtist("AeroSmith");
+            myMusic.setLabel("Geffen Records");
+            myProduct=myMusic;
+        }
+
         return myProduct;
     }
 
